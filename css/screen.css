@@ -1,0 +1,548 @@
+/*
+	CSS styles
+	Clent: Foocall
+	Website: www.foocallcard.com
+	Designer: Marcus
+	Creation date: 24 August 2011
+	Filename: screen.css
+
+	Light red:  e3001b
+	Dark red:   9f181d
+	
+*/
+
+body { background: #e3001b url("images/bg.png") center top repeat-y; font-family: Helvetica, Arial, sans-serif; font-size: 12px; color: #666; margin: 0; padding:0; cursor:default; }
+img { border: 0; }
+form, textarea { margin: 0; padding: 0; font-family: Helvetica, Arial, sans-serif; font-size:11px; }
+ul,ol,li,pre,form,html,p,blockquote,fieldset,input { margin:0; padding:0; font-family: Helvetica, Arial, sans-serif; }
+h1,h2,h3,h4,h5,h6 { color:#666; margin:0; padding:0; font-weight:normal; line-height:100%; }
+p { color: #666; line-height: 150%;  }
+strong { font-weight:bold  }
+hr { margin:10px 0; border:0; border-top:1px dashed #ccc; }
+.clear { clear:both; height:0; font-size: 0px; }
+
+#wrap { background: url("images/swirls.png") center top no-repeat; padding-top:15px; }
+#page-bg { background: url("images/wrap-bg.png") center top no-repeat; width:878px; margin:0 auto; padding-top:15px; }
+#pagewrap { background-color:#fff; position:relative; border-radius: 75px; -moz-border-radius: 75px; -webkit-border-radius: 75px; -moz-border-radius-bottomright:0; -moz-border-radius-bottomleft:0; border-bottom-right-radius:0; border-bottom-left-radius:0; width:848px; margin:0 auto; -moz-box-shadow:0px 0px 20px #666; -webkit-box-shadow:0px 0px 20px #666; box-shadow:0px 0px 20px #666; padding-bottom:40px; z-index:1; }
+
+
+#header { height:115px; }
+#header #logo { width:122px; height:49px; background: url("images/logo.png") no-repeat; position:absolute; top:30px; left:40px; } 
+#header #logo p { display:none; } 
+
+#home #page h1 {background: url("images/international-calling-card-title.png") no-repeat; width:415px; height:118px; margin-bottom:25px;}
+#home #page h1 span { display:none; }
+#home #page h2 { font-size:1.75em; margin-bottom:20px; text-shadow: 0 1px 0 #ccc; color:#e3001b; text-transform:none; font-weight:normal; line-height:130% }
+#home #page h3 { font-size:1.5em; margin-bottom:20px; text-shadow: 0 1px 0 #ccc; color:#e3001b; text-transform:none; font-weight:normal; line-height:130% }
+
+#page { position:relative; margin-left:40px; }
+#page.swirls { background: url("images/page-bg.png") 150px bottom no-repeat }
+#level1 #page h1 { color:#9f181d; text-shadow: 0 1px 0 #333; font-weight:bold; font-size:4em; letter-spacing:-2px; margin-bottom:25px; }
+#level1 #page h2 { color:#333; font-size:1.75em; font-weight:bold; margin:20px 0; line-height:120%; }
+#level1 #page h3 { color:#e3001b; font-size:1.5em; font-weight:bold; margin:20px 0 10px 0; line-height:120%; }
+
+#page p.important { background-color:#eee; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; width:450px; padding:10px; border:1px solid #ccc; font-weight:bold;}
+
+#page p { margin-bottom:10px; margin-right:40px }
+#page p a,
+#page p a:link,
+#page p a:visited,
+#page p a:hover,
+#page p a:active { color:#e3001b }
+
+#page ul { margin: 0 20px 20px 20px  }
+#page ul li { padding:5px; list-style:normal; line-height:150%; }
+
+#page .email { background: url("images/bg-li-computer.png") no-repeat; line-height:63px; padding-left:63px; color: #e3001b; font-weight:bold; font-size:2em; margin:25px 0; }
+#page .email a { text-decoration:none; }
+#page .phone { background: url("images/bg-li-landline.png") no-repeat; line-height:63px; padding-left:63px; color: #e3001b; font-weight:bold; font-size:2em; }
+#page .phone span { font-weight:normal; font-size:.75em; }
+
+#page .retailer { clear:left; height:55px; }
+#page .retailer.last { height:30px; }
+#page .retailer .left { float:left; width:180px; }
+#page .retailer .right { float:left; }
+
+#page .faq-question { margin:0 0 50px 0; }
+#page .faq-question li { list-style: none; margin:0 0 10px 0; padding:0; color:#e3001b; font-weight:bold; }
+#page .faq-question a { color:#e3001b; text-decoration:none; }
+
+#level1 #page .faq-answer { background-color:#eee; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; width:502px; padding:15px; border:1px solid #ccc; margin-top:25px;}
+#level1 #page .faq-answer h3 { color:#e3001b; font-weight:bold; margin:0 0 10px 0; font-size:1.3em; }
+#level1 #page .faq-answer p { margin:0 0 10px 0; }
+#level1 #page .faq-answer p.back-to-top { margin-bottom:0; font-weight:bold; text-align:right; }
+#level1 #page .faq-answer p.back-to-top a { color:#e3001b; text-decoration:none; }
+
+#level1 #page .steps { width:84px; height:51px; margin-bottom:10px; margin-top:50px; }
+#page .steps span { display:none; }
+#level1 #page .steps.step1 { background: url("images/step1-big-red.png") no-repeat; margin-top:0; }
+#level1 #page .steps.step2 { background: url("images/step2-big-red.png") no-repeat; }
+#level1 #page .steps.step3 { background: url("images/step3-big-red.png") no-repeat; }
+#level1 #page .steps.step4 { background: url("images/step4-big-red.png") no-repeat; }
+
+#nav { position:absolute; right:40px; top:30px }
+#nav ul li { list-style: none; text-decoration: none; margin: 0 2px; float: left; font-weight:bold; font-size:13px;  }
+#nav ul li a, 
+#nav ul li a:link, 
+#nav ul li a:visited { display: block; text-decoration: none; color: #fff; padding:5px 15px !important; font-weight:bold; background-color:#c29999; text-shadow: 1px 1px 0 #333; }
+#nav ul li a:hover,
+#nav ul li.active a { cursor: pointer; background-color: #660000; }
+#nav ul li#first a { -webkit-border-top-left-radius: 15px;
+-webkit-border-bottom-left-radius: 15px;
+-moz-border-radius-topleft: 15px;
+-moz-border-radius-bottomleft: 15px;
+border-top-left-radius: 15px;
+border-bottom-left-radius: 15px; }
+
+#nav ul li#last a { -webkit-border-top-right-radius: 15px;
+-webkit-border-bottom-right-radius: 15px;
+-moz-border-radius-topright: 15px;
+-moz-border-radius-bottomright: 15px;
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px; }
+
+
+#callrates { background-color:#bc0e1c; border-radius:10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; margin:0 40px 40px 40px; float:right; width:236px; padding:15px 15px 10px 15px; position:relative;}
+#home #callrates { margin-left:0; }
+
+#callrates .call-rates-badge { position:absolute; top:-60px; right:-70px; }
+#callrates .country-select { width:100%; }
+#home #page #callrates h3,
+#home #page #callrates h4,
+#level1 #page #callrates h3,
+#level1 #page #callrates h4,
+#callrates p { color:#fff; }
+#home #page #callrates h3,
+#level1 #page #callrates h3 { font-weight:bold; font-size:2.3em; margin:0 0 20px 0; letter-spacing:-1px; text-shadow: 0 1px 0 #000; line-height:100%; }
+#callrates h4 { font-weight:bold; font-size:2em; letter-spacing:-1px; text-shadow: 0 1px 0 #000; line-height:90px; padding-left:70px; background: url("images/flags/flag-generic.png") left center no-repeat; }
+#callrates h4.AF { background: url("images/flags/flag-af.png") left center no-repeat; }
+#callrates h4.AL { background: url("images/flags/flag-al.png") left center no-repeat; }
+#callrates h4.DZ { background: url("images/flags/flag-dz.png") left center no-repeat; }
+#callrates h4.AD { background: url("images/flags/flag-ad.png") left center no-repeat; }
+#callrates h4.AO { background: url("images/flags/flag-ao.png") left center no-repeat; }
+#callrates h4.AI { background: url("images/flags/flag-ai.png") left center no-repeat; }
+#callrates h4.AQ { background: url("images/flags/flag-aq.png") left center no-repeat; }
+#callrates h4.AG { background: url("images/flags/flag-ag.png") left center no-repeat; }
+#callrates h4.AR { background: url("images/flags/flag-ar.png") left center no-repeat; }
+#callrates h4.AM { background: url("images/flags/flag-am.png") left center no-repeat; }
+#callrates h4.AW { background: url("images/flags/flag-aw.png") left center no-repeat; }
+#callrates h4.AC { background: url("images/flags/flag-ac.png") left center no-repeat; }
+#callrates h4.AU { background: url("images/flags/flag-au.png") left center no-repeat; }
+#callrates h4.AT { background: url("images/flags/flag-at.png") left center no-repeat; }
+#callrates h4.AZ { background: url("images/flags/flag-az.png") left center no-repeat; }
+#callrates h4.BS { background: url("images/flags/flag-bs.png") left center no-repeat; }
+#callrates h4.BH { background: url("images/flags/flag-bh.png") left center no-repeat; }
+#callrates h4.BD { background: url("images/flags/flag-bd.png") left center no-repeat; }
+#callrates h4.BB { background: url("images/flags/flag-bb.png") left center no-repeat; }
+#callrates h4.BY { background: url("images/flags/flag-by.png") left center no-repeat; }
+#callrates h4.BE { background: url("images/flags/flag-be.png") left center no-repeat; }
+#callrates h4.BZ { background: url("images/flags/flag-bz.png") left center no-repeat; }
+#callrates h4.BJ { background: url("images/flags/flag-bj.png") left center no-repeat; }
+#callrates h4.BM { background: url("images/flags/flag-bm.png") left center no-repeat; }
+#callrates h4.BT { background: url("images/flags/flag-bt.png") left center no-repeat; }
+#callrates h4.BO { background: url("images/flags/flag-bo.png") left center no-repeat; }
+#callrates h4.BA { background: url("images/flags/flag-ba.png") left center no-repeat; }
+#callrates h4.BW { background: url("images/flags/flag-bw.png") left center no-repeat; }
+#callrates h4.BR { background: url("images/flags/flag-br.png") left center no-repeat; }
+#callrates h4.BN { background: url("images/flags/flag-bn.png") left center no-repeat; }
+#callrates h4.BG { background: url("images/flags/flag-bg.png") left center no-repeat; }
+#callrates h4.BF { background: url("images/flags/flag-bf.png") left center no-repeat; }
+#callrates h4.BI { background: url("images/flags/flag-bi.png") left center no-repeat; }
+#callrates h4.KH { background: url("images/flags/flag-kh.png") left center no-repeat; }
+#callrates h4.CM { background: url("images/flags/flag-cm.png") left center no-repeat; }
+#callrates h4.CA { background: url("images/flags/flag-ca.png") left center no-repeat; }
+#callrates h4.CV { background: url("images/flags/flag-cv.png") left center no-repeat; }
+#callrates h4.KY { background: url("images/flags/flag-ky.png") left center no-repeat; }
+#callrates h4.CF { background: url("images/flags/flag-cf.png") left center no-repeat; }
+#callrates h4.TD { background: url("images/flags/flag-td.png") left center no-repeat; }
+#callrates h4.CL { background: url("images/flags/flag-cl.png") left center no-repeat; }
+#callrates h4.CN { background: url("images/flags/flag-cn.png") left center no-repeat; }
+#callrates h4.CX { background: url("images/flags/flag-cx.png") left center no-repeat; }
+#callrates h4.CC { background: url("images/flags/flag-cc.png") left center no-repeat; }
+#callrates h4.CO { background: url("images/flags/flag-co.png") left center no-repeat; }
+#callrates h4.KM { background: url("images/flags/flag-km.png") left center no-repeat; }
+#callrates h4.CG { background: url("images/flags/flag-cg.png") left center no-repeat; }
+#callrates h4.CK { background: url("images/flags/flag-ck.png") left center no-repeat; }
+#callrates h4.CR { background: url("images/flags/flag-cr.png") left center no-repeat; }
+#callrates h4.HR { background: url("images/flags/flag-hr.png") left center no-repeat; }
+#callrates h4.CU { background: url("images/flags/flag-cu.png") left center no-repeat; }
+#callrates h4.CY { background: url("images/flags/flag-cy.png") left center no-repeat; }
+#callrates h4.CYN { background: url("images/flags/flag-cyn.png") left center no-repeat; }
+#callrates h4.CZ { background: url("images/flags/flag-cz.png") left center no-repeat; }
+#callrates h4.CD { background: url("images/flags/flag-cd.png") left center no-repeat; }
+#callrates h4.DK { background: url("images/flags/flag-dk.png") left center no-repeat; }
+#callrates h4.DG { background: url("images/flags/flag-dg.png") left center no-repeat; }
+#callrates h4.DJ { background: url("images/flags/flag-dj.png") left center no-repeat; }
+#callrates h4.DM { background: url("images/flags/flag-dm.png") left center no-repeat; }
+#callrates h4.TP { background: url("images/flags/flag-tp.png") left center no-repeat; }
+#callrates h4.EC { background: url("images/flags/flag-ec.png") left center no-repeat; }
+#callrates h4.EG { background: url("images/flags/flag-eg.png") left center no-repeat; }
+#callrates h4.SV { background: url("images/flags/flag-sv.png") left center no-repeat; }
+#callrates h4.GQ { background: url("images/flags/flag-gq.png") left center no-repeat; }
+#callrates h4.ER { background: url("images/flags/flag-er.png") left center no-repeat; }
+#callrates h4.EE { background: url("images/flags/flag-ee.png") left center no-repeat; }
+#callrates h4.ET { background: url("images/flags/flag-et.png") left center no-repeat; }
+#callrates h4.FK { background: url("images/flags/flag-fk.png") left center no-repeat; }
+#callrates h4.FO { background: url("images/flags/flag-fo.png") left center no-repeat; }
+#callrates h4.FJ { background: url("images/flags/flag-fj.png") left center no-repeat; }
+#callrates h4.FI { background: url("images/flags/flag-fi.png") left center no-repeat; }
+#callrates h4.FR { background: url("images/flags/flag-fr.png") left center no-repeat; }
+#callrates h4.GF { background: url("images/flags/flag-gf.png") left center no-repeat; }
+#callrates h4.PF { background: url("images/flags/flag-pf.png") left center no-repeat; }
+#callrates h4.GA { background: url("images/flags/flag-ga.png") left center no-repeat; }
+#callrates h4.GM { background: url("images/flags/flag-gm.png") left center no-repeat; }
+#callrates h4.GE { background: url("images/flags/flag-ge.png") left center no-repeat; }
+#callrates h4.DE { background: url("images/flags/flag-de.png") left center no-repeat; }
+#callrates h4.GH { background: url("images/flags/flag-gh.png") left center no-repeat; }
+#callrates h4.GI { background: url("images/flags/flag-gi.png") left center no-repeat; }
+#callrates h4.GR { background: url("images/flags/flag-gr.png") left center no-repeat; }
+#callrates h4.GL { background: url("images/flags/flag-gl.png") left center no-repeat; }
+#callrates h4.GD { background: url("images/flags/flag-gd.png") left center no-repeat; }
+#callrates h4.GP { background: url("images/flags/flag-gp.png") left center no-repeat; }
+#callrates h4.GU { background: url("images/flags/flag-gu.png") left center no-repeat; }
+#callrates h4.GT { background: url("images/flags/flag-gt.png") left center no-repeat; }
+#callrates h4.GN { background: url("images/flags/flag-gn.png") left center no-repeat; }
+#callrates h4.GW { background: url("images/flags/flag-gw.png") left center no-repeat; }
+#callrates h4.GY { background: url("images/flags/flag-gy.png") left center no-repeat; }
+#callrates h4.HT { background: url("images/flags/flag-ht.png") left center no-repeat; }
+#callrates h4.HN { background: url("images/flags/flag-hn.png") left center no-repeat; }
+#callrates h4.HK { background: url("images/flags/flag-hk.png") left center no-repeat; }
+#callrates h4.HU { background: url("images/flags/flag-hu.png") left center no-repeat; }
+#callrates h4.IS { background: url("images/flags/flag-is.png") left center no-repeat; }
+#callrates h4.IN { background: url("images/flags/flag-in.png") left center no-repeat; }
+#callrates h4.ID { background: url("images/flags/flag-id.png") left center no-repeat; }
+#callrates h4.IR { background: url("images/flags/flag-ir.png") left center no-repeat; }
+#callrates h4.IQ { background: url("images/flags/flag-iq.png") left center no-repeat; }
+#callrates h4.IE { background: url("images/flags/flag-ie.png") left center no-repeat; }
+#callrates h4.IL { background: url("images/flags/flag-il.png") left center no-repeat; }
+#callrates h4.IT { background: url("images/flags/flag-it.png") left center no-repeat; }
+#callrates h4.CI { background: url("images/flags/flag-ci.png") left center no-repeat; }
+#callrates h4.JM { background: url("images/flags/flag-jm.png") left center no-repeat; }
+#callrates h4.JP { background: url("images/flags/flag-jp.png") left center no-repeat; }
+#callrates h4.JO { background: url("images/flags/flag-jo.png") left center no-repeat; }
+#callrates h4.KZ { background: url("images/flags/flag-kz.png") left center no-repeat; }
+#callrates h4.KE { background: url("images/flags/flag-ke.png") left center no-repeat; }
+#callrates h4.KI { background: url("images/flags/flag-ki.png") left center no-repeat; }
+#callrates h4.KP { background: url("images/flags/flag-kp.png") left center no-repeat; }
+#callrates h4.KR { background: url("images/flags/flag-kr.png") left center no-repeat; }
+#callrates h4.KW { background: url("images/flags/flag-kw.png") left center no-repeat; }
+#callrates h4.KG { background: url("images/flags/flag-kg.png") left center no-repeat; }
+#callrates h4.LA { background: url("images/flags/flag-la.png") left center no-repeat; }
+#callrates h4.LV { background: url("images/flags/flag-lv.png") left center no-repeat; }
+#callrates h4.LB { background: url("images/flags/flag-lb.png") left center no-repeat; }
+#callrates h4.LS { background: url("images/flags/flag-ls.png") left center no-repeat; }
+#callrates h4.LR { background: url("images/flags/flag-lr.png") left center no-repeat; }
+#callrates h4.LY { background: url("images/flags/flag-ly.png") left center no-repeat; }
+#callrates h4.LI { background: url("images/flags/flag-li.png") left center no-repeat; }
+#callrates h4.LT { background: url("images/flags/flag-lt.png") left center no-repeat; }
+#callrates h4.LU { background: url("images/flags/flag-lu.png") left center no-repeat; }
+#callrates h4.MO { background: url("images/flags/flag-mo.png") left center no-repeat; }
+#callrates h4.MK { background: url("images/flags/flag-mk.png") left center no-repeat; }
+#callrates h4.MG { background: url("images/flags/flag-mg.png") left center no-repeat; }
+#callrates h4.MW { background: url("images/flags/flag-mw.png") left center no-repeat; }
+#callrates h4.MY { background: url("images/flags/flag-my.png") left center no-repeat; }
+#callrates h4.MV { background: url("images/flags/flag-mv.png") left center no-repeat; }
+#callrates h4.ML { background: url("images/flags/flag-ml.png") left center no-repeat; }
+#callrates h4.MT { background: url("images/flags/flag-mt.png") left center no-repeat; }
+#callrates h4.MH { background: url("images/flags/flag-mh.png") left center no-repeat; }
+#callrates h4.MQ { background: url("images/flags/flag-mq.png") left center no-repeat; }
+#callrates h4.MR { background: url("images/flags/flag-mr.png") left center no-repeat; }
+#callrates h4.MU { background: url("images/flags/flag-mu.png") left center no-repeat; }
+#callrates h4.YT { background: url("images/flags/flag-yt.png") left center no-repeat; }
+#callrates h4.MX { background: url("images/flags/flag-mx.png") left center no-repeat; }
+#callrates h4.FM { background: url("images/flags/flag-fm.png") left center no-repeat; }
+#callrates h4.MD { background: url("images/flags/flag-md.png") left center no-repeat; }
+#callrates h4.MC { background: url("images/flags/flag-mc.png") left center no-repeat; }
+#callrates h4.MN { background: url("images/flags/flag-mn.png") left center no-repeat; }
+#callrates h4.ME { background: url("images/flags/flag-me.png") left center no-repeat; }
+#callrates h4.MS { background: url("images/flags/flag-ms.png") left center no-repeat; }
+#callrates h4.MA { background: url("images/flags/flag-ma.png") left center no-repeat; }
+#callrates h4.MZ { background: url("images/flags/flag-mz.png") left center no-repeat; }
+#callrates h4.MM { background: url("images/flags/flag-mm.png") left center no-repeat; }
+#callrates h4.NA { background: url("images/flags/flag-na.png") left center no-repeat; }
+#callrates h4.NR { background: url("images/flags/flag-nr.png") left center no-repeat; }
+#callrates h4.NP { background: url("images/flags/flag-np.png") left center no-repeat; }
+#callrates h4.NL { background: url("images/flags/flag-nl.png") left center no-repeat; }
+#callrates h4.AN { background: url("images/flags/flag-an.png") left center no-repeat; }
+#callrates h4.NC { background: url("images/flags/flag-nc.png") left center no-repeat; }
+#callrates h4.NZ { background: url("images/flags/flag-nz.png") left center no-repeat; }
+#callrates h4.NI { background: url("images/flags/flag-ni.png") left center no-repeat; }
+#callrates h4.NE { background: url("images/flags/flag-ne.png") left center no-repeat; }
+#callrates h4.NG { background: url("images/flags/flag-ng.png") left center no-repeat; }
+#callrates h4.NU { background: url("images/flags/flag-nu.png") left center no-repeat; }
+#callrates h4.NF { background: url("images/flags/flag-nf.png") left center no-repeat; }
+#callrates h4.NO { background: url("images/flags/flag-no.png") left center no-repeat; }
+#callrates h4.OM { background: url("images/flags/flag-om.png") left center no-repeat; }
+#callrates h4.PK { background: url("images/flags/flag-pk.png") left center no-repeat; }
+#callrates h4.PW { background: url("images/flags/flag-pw.png") left center no-repeat; }
+#callrates h4.PS { background: url("images/flags/flag-ps.png") left center no-repeat; }
+#callrates h4.PA { background: url("images/flags/flag-pa.png") left center no-repeat; }
+#callrates h4.PG { background: url("images/flags/flag-pg.png") left center no-repeat; }
+#callrates h4.PY { background: url("images/flags/flag-py.png") left center no-repeat; }
+#callrates h4.PE { background: url("images/flags/flag-pe.png") left center no-repeat; }
+#callrates h4.PH { background: url("images/flags/flag-ph.png") left center no-repeat; }
+#callrates h4.PL { background: url("images/flags/flag-pl.png") left center no-repeat; }
+#callrates h4.PT { background: url("images/flags/flag-pt.png") left center no-repeat; }
+#callrates h4.PR { background: url("images/flags/flag-pr.png") left center no-repeat; }
+#callrates h4.QA { background: url("images/flags/flag-qa.png") left center no-repeat; }
+#callrates h4.RO { background: url("images/flags/flag-ro.png") left center no-repeat; }
+#callrates h4.RU { background: url("images/flags/flag-ru.png") left center no-repeat; }
+#callrates h4.RW { background: url("images/flags/flag-rw.png") left center no-repeat; }
+#callrates h4.MP { background: url("images/flags/flag-mp.png") left center no-repeat; }
+#callrates h4.WS { background: url("images/flags/flag-ws.png") left center no-repeat; }
+#callrates h4.WSW { background: url("images/flags/flag-wsw.png") left center no-repeat; }
+#callrates h4.SM { background: url("images/flags/flag-sm.png") left center no-repeat; }
+#callrates h4.ST { background: url("images/flags/flag-st.png") left center no-repeat; }
+#callrates h4.SA { background: url("images/flags/flag-sa.png") left center no-repeat; }
+#callrates h4.SN { background: url("images/flags/flag-sn.png") left center no-repeat; }
+#callrates h4.RS { background: url("images/flags/flag-rs.png") left center no-repeat; }
+#callrates h4.SC { background: url("images/flags/flag-sc.png") left center no-repeat; }
+#callrates h4.SL { background: url("images/flags/flag-sl.png") left center no-repeat; }
+#callrates h4.SG { background: url("images/flags/flag-sg.png") left center no-repeat; }
+#callrates h4.SK { background: url("images/flags/flag-sk.png") left center no-repeat; }
+#callrates h4.SI { background: url("images/flags/flag-si.png") left center no-repeat; }
+#callrates h4.SB { background: url("images/flags/flag-sb.png") left center no-repeat; }
+#callrates h4.SO { background: url("images/flags/flag-so.png") left center no-repeat; }
+#callrates h4.ZA { background: url("images/flags/flag-za.png") left center no-repeat; }
+#callrates h4.ES { background: url("images/flags/flag-es.png") left center no-repeat; }
+#callrates h4.LK { background: url("images/flags/flag-lk.png") left center no-repeat; }
+#callrates h4.SH { background: url("images/flags/flag-sh.png") left center no-repeat; }
+#callrates h4.KN { background: url("images/flags/flag-kn.png") left center no-repeat; }
+#callrates h4.LC { background: url("images/flags/flag-lc.png") left center no-repeat; }
+#callrates h4.VC { background: url("images/flags/flag-vc.png") left center no-repeat; }
+#callrates h4.SD { background: url("images/flags/flag-sd.png") left center no-repeat; }
+#callrates h4.SR { background: url("images/flags/flag-sr.png") left center no-repeat; }
+#callrates h4.SZ { background: url("images/flags/flag-sz.png") left center no-repeat; }
+#callrates h4.SE { background: url("images/flags/flag-se.png") left center no-repeat; }
+#callrates h4.CH { background: url("images/flags/flag-ch.png") left center no-repeat; }
+#callrates h4.SY { background: url("images/flags/flag-sy.png") left center no-repeat; }
+#callrates h4.TW { background: url("images/flags/flag-tw.png") left center no-repeat; }
+#callrates h4.TJ { background: url("images/flags/flag-tj.png") left center no-repeat; }
+#callrates h4.TZ { background: url("images/flags/flag-tz.png") left center no-repeat; }
+#callrates h4.TH { background: url("images/flags/flag-th.png") left center no-repeat; }
+#callrates h4.TG { background: url("images/flags/flag-tg.png") left center no-repeat; }
+#callrates h4.TK { background: url("images/flags/flag-tk.png") left center no-repeat; }
+#callrates h4.TO { background: url("images/flags/flag-to.png") left center no-repeat; }
+#callrates h4.TT { background: url("images/flags/flag-tt.png") left center no-repeat; }
+#callrates h4.TN { background: url("images/flags/flag-tn.png") left center no-repeat; }
+#callrates h4.TR { background: url("images/flags/flag-tr.png") left center no-repeat; }
+#callrates h4.TM { background: url("images/flags/flag-tm.png") left center no-repeat; }
+#callrates h4.TC { background: url("images/flags/flag-tc.png") left center no-repeat; }
+#callrates h4.TV { background: url("images/flags/flag-tv.png") left center no-repeat; }
+#callrates h4.UG { background: url("images/flags/flag-ug.png") left center no-repeat; }
+#callrates h4.GB { background: url("images/flags/flag-gb.png") left center no-repeat; }
+#callrates h4.UA { background: url("images/flags/flag-ua.png") left center no-repeat; }
+#callrates h4.AE { background: url("images/flags/flag-ae.png") left center no-repeat; }
+#callrates h4.UY { background: url("images/flags/flag-uy.png") left center no-repeat; }
+#callrates h4.US { background: url("images/flags/flag-us.png") left center no-repeat; }
+#callrates h4.UZ { background: url("images/flags/flag-uz.png") left center no-repeat; }
+#callrates h4.VU { background: url("images/flags/flag-vu.png") left center no-repeat; }
+#callrates h4.VA { background: url("images/flags/flag-va.png") left center no-repeat; }
+#callrates h4.VE { background: url("images/flags/flag-ve.png") left center no-repeat; }
+#callrates h4.VN { background: url("images/flags/flag-vn.png") left center no-repeat; }
+#callrates h4.VG { background: url("images/flags/flag-vg.png") left center no-repeat; }
+#callrates h4.VI { background: url("images/flags/flag-vi.png") left center no-repeat; }
+#callrates h4.WF { background: url("images/flags/flag-wf.png") left center no-repeat; }
+#callrates h4.YE { background: url("images/flags/flag-ye.png") left center no-repeat; }
+#callrates h4.ZM { background: url("images/flags/flag-zm.png") left center no-repeat; }
+#callrates h4.ZW { background: url("images/flags/flag-zw.png") left center no-repeat; }
+#callrates h4.medium {  }
+#callrates h4.small { background-position: left top; line-height:normal; font-size:1.5em; margin:15px 0 5px 0; height:60px; padding-top:10px }
+
+#callrates #costs {background: url("images/call-rates-cost-bg.png") left center no-repeat; position:relative; height:100px;}
+#callrates #costs p { width:118px; text-align:center; color:#333; line-height:100%; }
+#callrates #costs p.landline { position:absolute; top:0; left:0; font-size:1.2em; margin-top:10px; font-weight:bold; }
+#callrates #costs p.landline span,
+#callrates #costs p.mobile span { font-weight:normal; display:block; }
+#callrates #costs p.landline-cost { position:absolute; top:50px; left:0; font-size:2em; line-height:45px; font-weight:bold; }
+#callrates #costs p.mobile { position:absolute; top:0; left:118px;  font-size:1.2em; margin-top:10px; font-weight:bold; }
+#callrates #costs p.mobile-cost { position:absolute; top:50px; left:118px; font-size:2em; line-height:45px; font-weight:bold; }
+#callrates .connection-fee { color:#fff; text-align:center; padding:0; margin:5px 0 0 0; line-height:100%; }
+
+.drop-shadow { -moz-box-shadow:0px 0px 5px #666; -webkit-box-shadow:0px 0px 5px #666; box-shadow:0px 0px 5px #666; }
+#footer .drop-shadow { -moz-box-shadow:0px 0px 5px #000; -webkit-box-shadow:0px 0px 5px #000; box-shadow:0px 0px 5px #000; }
+.gradient-red { background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e2001a), color-stop(1, #9f181d));
+background-image: -moz-linear-gradient(
+    center bottom,
+    #e2001a 0%,
+    #9f181d 100%
+);
+
+}
+
+.gradient-grey { background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #eee),
+    color-stop(1, #fff)
+);
+background-image: -moz-linear-gradient(
+    center bottom,
+    #fff 0%,
+    #eee 100%
+);
+}
+
+#footer { background: url("images/footer-bg2.png") no-repeat; margin:0 auto; width:878px; height:430px; position:relative; }
+#footer #copyright { position:absolute; bottom:80px; left:15px; }
+#footer #copyright p,
+#footer #copyright a,
+#footer p,
+#footer ul li { color:#fff; }
+#footer #foocall-app { position:absolute; bottom:20px; right:85px; }
+
+#footer.globe { background: url("images/footer-globe-bg2.png") no-repeat; }
+#footer.card { background: url("images/footer-card-bg.png") no-repeat; }
+
+#footer ul { padding:10px 0 0 20px; }
+#footer ul li { padding-bottom:15px; }
+
+#footer .retailers { padding:20px; background-color:#fff; text-align:center; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; margin-top:20px; }
+#footer .retailers img { margin-right:50px; }
+#footer .retailers img.last { margin-right:0; }
+
+#footer #left { width:285px; text-align:center; padding-top:30px; margin-left:15px; }
+
+#footer #right { position:absolute; left:300px; top:35px; width:540px; }
+#footer #right h3 { color:#fff; letter-spacing:-1px; font-size:2.2em; margin-bottom:10px; text-shadow:1px 1px 0 #333 }
+#footer #right h4 { color:#e3001b; font-size:1.4em; margin-bottom:10px; }
+#footer #right ol li { list-style: none; color:#fff; font-size:1.1em; margin-top:15px; padding-left:60px; line-height:28px;}
+#footer #right ol li a { color:#e3001b; }
+#footer #right ol li.one { background: url("images/step1.png") left center no-repeat;}
+#footer #right ol li.two { background: url("images/step2.png") no-repeat;}
+#footer #right ol li.three { background: url("images/step3.png") no-repeat;}
+#footer #right ol li.four { background: url("images/step4.png") no-repeat;}
+#footer #right .button-find-out-more { position:absolute; top:190px; right:45px; }
+
+.retailers img { margin-right:20px; }
+.retailers img.button-more-retailers { margin-bottom:-5px; }
+
+/* tables */
+table { margin:10px 0; border-collapse:collapse; background-color:#333; border:0; }
+table.rounded { -webkit-border-top-left-radius: 10px; -moz-border-radius-topleft: 10px; border-top-left-radius: 10px; -webkit-border-top-right-radius: 10px; -moz-border-radius-topright: 10px; border-top-right-radius: 10px; }
+table th, td { padding:15px; text-align:left; border:0; font-weight:bold;  }
+table th {  color:#fff; }
+table.borders td { border:0; border-top:1px solid #ccc; }
+table.grey td { background-color:#eee; color:#333; }
+table.white td { background-color:#fff; color:#333; }
+
+#level1 #page a.round-button { padding:5px 10px; border: 1px solid #ccc; font-weight:bold; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; text-decoration:none; -moz-box-shadow:0px 2px 3px #999; -webkit-box-shadow:0px 2px 3px #999; box-shadow:0px 2px 3px #999; display:inline-block; margin-bottom:10px; color:#666; }
+#level1 #page a.round-button span { font-family:Georgia, "Times New Roman", Times, serif; }
+#level1 #page a:hover.round-button,
+#level1 #page a:active.round-button { -moz-box-shadow:0px 1px 2px #9c9c9c; -webkit-box-shadow:0px 1px 2px #9c9c9c; box-shadow:0px 1px 1px #9c9c9c; }
+
+#footer a.round-button { padding:5px 10px; border: 1px solid #ccc; font-weight:bold; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; text-decoration:none; -moz-box-shadow:0px 2px 3px #000; -webkit-box-shadow:0px 2px 3px #000; box-shadow:0px 2px 3px #000; display:inline-block; margin-bottom:10px; color:#666; }
+#footer a.round-button span { font-family:Georgia, "Times New Roman", Times, serif; }
+#footer a:hover.round-button,
+#footer a:active.round-button { -moz-box-shadow:0px 1px 2px #000; -webkit-box-shadow:0px 1px 2px #000; box-shadow:0px 1px 1px #000; }
+
+#level1 #page a.grey,
+#footer a.grey { background-color:#ddd; 
+background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(1, #eee), /* top */
+    color-stop(0, #ccc)
+
+);
+background-image: -moz-linear-gradient(
+    center bottom,
+    #ccc 0%,
+    #eee 100% /* top */ 
+);
+}
+
+#level1 #page a:active.grey,
+#footer a:active.grey  {
+	background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(1, #ccc), /* top */
+    color-stop(0, #eee)
+
+);
+background-image: -moz-linear-gradient(
+    center bottom,
+    #eee 0%,
+    #ddd 100% /* top */ 
+);
+
+}
+
+#level1 #page a.red,
+#footer a.red { background-color:#9f181d;
+background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(1, #e2001a), /* top */
+    color-stop(0, #9f181d)
+
+);
+background-image: -moz-linear-gradient(
+    center bottom,
+    #9f181d 0%,
+    #e2001a 100% /* top */ 
+);
+border-color:#9f181d;
+color:#fff;
+}
+
+
+#level1 #page a:active.red,
+#footer a:active.red  {
+	background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(1, #9f181d), /* top */
+    color-stop(0, #e2001a) /* bottom */
+
+);
+background-image: -moz-linear-gradient(
+    center bottom,
+    #e2001a 0%, /* bottom */
+    #9f181d 100% /* top */ 
+);
+
+}
+
+#level1 #page a.black,
+#footer a.black { background-color:#333;
+background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(1, #666), /* top */
+    color-stop(0, #000)
+
+);
+background-image: -moz-linear-gradient(
+    center bottom,
+    #000 0%,
+    #666 100% /* top */ 
+);
+border-color:#000;
+color:#fff;
+}
+
+#level1 #page a:active.black,
+#footer a:active.black  {
+	background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(1, #000), /* top */
+    color-stop(0, #666) /* bottom */
+
+);
+background-image: -moz-linear-gradient(
+    center bottom,
+    #666 0%, /* bottom */
+    #000 100% /* top */ 
+);
+
+}
